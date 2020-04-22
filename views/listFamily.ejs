@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+    <h1>list of my family</h1>
+    <ul>
+        <!--we wnt to write java here and data is the key not the value-->
+        <%data.forEach(val=>{%>
+           <li><%= val %></li>
+        <%}); %>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="/app.js"></script>
+</body>
+</html>

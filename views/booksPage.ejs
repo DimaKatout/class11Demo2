@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+    <h1>list of my Books</h1>
+    <ul>
+    <% book.forEach(val =>{ %>
+        <li><%= val.volumeInfo.title %></li>
+        <li><%= val.industryIdentifires.type %></li>
+    <%});%> 
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="/app.js"></script>
+</body>
+</html>
